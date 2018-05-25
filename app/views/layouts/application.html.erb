@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Azoska</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+
+  <body>
+
+  
+  
+
+  <div class="row">
+
+      <div class="col s3">
+        <!-- Grey navigation panel -->
+
+
+        <!-- The sidenav that we see -->
+
+        
+        
+        
+   <a href="/products"> <i class="material-icons">cloud</i>Products</a>
+    <p>Second Link</p>
+    <div class="divider"></div>
+    <a class="subheader">Subheader</a>
+    <a class="waves-effect" href="#!">Third Link With Waves</a>
+
+    <!-- End of the sidenav that we see -->
+
+
+    <!-- Sliding SideNav begins-->
+
+
+         <ul id="slide-out" class="sidenav">
+          <li><div class="user-view">
+          <div class="background">
+          <img src="images/office.jpg">
+          </div>
+      <a href="#user"><img class="circle" src="images/person.jpg"></a>
+      <a href="#name"><span class="white-text name">John Doe</span></a>
+      <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+    </div></li>
+    <li><a href="#"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+    <li><a href="#!">Second Link</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  </ul>
+  
+
+      </div>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+
+      <!-- sliding sidenav ends -->
+
+      <div class="col s9">
+        <!-- Teal page content  -->
+      
+        <%= yield %>  
+      
+
+    </div>
+    
+
+
+
+
+
+
+  </body>
+</html>
